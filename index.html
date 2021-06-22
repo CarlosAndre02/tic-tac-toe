@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jogo da velha</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scores">
+        <h2>Pontuação</h2>
+        <div class="scores-container">
+          <div class="scores-player">
+            <img src="./images/player.svg" alt="Player icon" />
+            <span id="scores-player-value">0</span>
+          </div>
+          <div class="scores-ai">
+            <img src="./images/ai.svg" alt="AI icon" />
+            <span id="scores-ai-value">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="app">
+        <div class="square" id="0x0"></div>
+        <div class="square" id="0x1"></div>
+        <div class="square" id="0x2"></div>
+        <div class="square" id="1x0"></div>
+        <div class="square" id="1x1"></div>
+        <div class="square" id="1x2"></div>
+        <div class="square" id="2x0"></div>
+        <div class="square" id="2x1"></div>
+        <div class="square" id="2x2"></div>
+      </div>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal">
+        <p id="modal-title"></p>
+        <a href="#" id="modal-button">Ok</a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
